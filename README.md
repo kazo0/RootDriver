@@ -13,7 +13,7 @@ From within the `test\DriverReportsTests\` directory you can:
 * run `dotnet test` to run all included unit tests
 
 ## Assumptions
-* Order matters when writing your commands, you cannot ahve a "Trip" command for a Driver that has not been registered.
+* Order matters when writing your commands, you cannot have a "Trip" command for a Driver that has not been registered.
 * I skip over any commands that cannot be read or are invalid, still generating a report for the data that I was able to parse.
 * I am still storing all trips, regardless of their average speed being below or above the threshold. The threshold rule is only used for reporting.
 * The 24-hour format for timestamps should always have two places for the hour (03:00 work, 3:00 does not)
